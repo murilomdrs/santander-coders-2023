@@ -85,11 +85,23 @@ const livro = {
 infoLivros(livro);
 */
 
+// ### Map:
+
+// 5- Dado um array de números, crie um novo array onde cada número seja elevado ao quadrado.
+
 /*
-### Map:
+let numero = [2,4,8,16,32,64];
+let numeroPotencia = [];
 
-5- Dado um array de números, crie um novo array onde cada número seja elevado ao quadrado.
+for(item in numero) {
+  const potencia = Math.pow(numero[item], 2);
+  numeroPotencia.push(potencia);
+}
 
+console.log(numeroPotencia);
+*/
+
+/*
 6- Dado um array de palavras, crie um novo array com a primeira letra de cada palavra em maiúscula.
 
 7- Crie um array de objetos representando produtos com propriedades como nome, preço e quantidade. Use o método map() para calcular o valor total de cada produto (preço * quantidade).
