@@ -43,11 +43,49 @@ const consultaPais = prompt('Digite o nome de um país');
 alert(checarCapital(consultaPais));
 */
 
+// 3- Crie um dicionário com nomes de frutas e seus preços. Escreva uma função que calcule o preço total de uma cesta de frutas.
+
+/* 
+function valorCompra() {
+  let soma = 0;
+  for(let fruta in frutas) {
+    soma += frutas[fruta];
+  }
+  return soma;
+}
+
+let frutas = {
+  maca: 3,
+  banana: 4,
+  morango: 5,
+  uva: 2,
+  kiwi: 7,
+  mamao: 2,
+  laranja: 6
+};
+
+alert(`O valor total da cesta de frutas é R$${valorCompra()}`);
+ */
+
+// 4- Crie um objeto que represente um livro com propriedades como título, autor, ano de publicação, etc. Crie uma função que imprima as informações do livro em um formato legível.
+
 /*
-3- Crie um dicionário com nomes de frutas e seus preços. Escreva uma função que calcule o preço total de uma cesta de frutas.
+function infoLivros(livro) {
+  alert(`O livro "${livro.titulo}" foi escrito por ${livro.autor} e publicado pela editora ${livro.editora} em ${livro.anoPublicacao}, contém um total de ${livro.numeroPaginas} páginas.`);
+}
 
-4- Crie um objeto que represente um livro com propriedades como título, autor, ano de publicação, etc. Crie uma função que imprima as informações do livro em um formato legível.
+const livro = {
+  titulo: 'Outros jeitos de usar a boca',
+  autor: 'Rupi Kaur',
+  anoPublicacao: 2017,
+  numeroPaginas: 208,
+  editora: 'Planeta'
+}
 
+infoLivros(livro);
+*/
+
+/*
 ### Map:
 
 5- Dado um array de números, crie um novo array onde cada número seja elevado ao quadrado.
