@@ -101,9 +101,22 @@ for(item in numero) {
 console.log(numeroPotencia);
 */
 
-/*
-6- Dado um array de palavras, crie um novo array com a primeira letra de cada palavra em maiúscula.
+// 6- Dado um array de palavras, crie um novo array com a primeira letra de cada palavra em maiúscula.
 
+/*
+const lista = ['santander', 'ada tech', 'javascript', 'jaque', 'desenvolvedor'];
+const listaCorrigida = [];
+
+for(let i = 0; i < lista.length; i++) {
+  palavraCorrigida = lista[i][0].toUpperCase() + lista[i].substring(1);
+  listaCorrigida.push(palavraCorrigida);
+}
+
+console.log(lista);
+console.log(listaCorrigida);
+*/
+
+/*
 7- Crie um array de objetos representando produtos com propriedades como nome, preço e quantidade. Use o método map() para calcular o valor total de cada produto (preço * quantidade).
 
 8- Converta um array de temperaturas em graus Celsius para Fahrenheit usando a fórmula (C * 9/5) + 32.
