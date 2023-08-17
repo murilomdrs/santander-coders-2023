@@ -116,21 +116,104 @@ console.log(lista);
 console.log(listaCorrigida);
 */
 
+// 7- Crie um array de objetos representando produtos com propriedades como nome, preço e quantidade. Use o método map() para calcular o valor total de cada produto (preço * quantidade).
+
 /*
-7- Crie um array de objetos representando produtos com propriedades como nome, preço e quantidade. Use o método map() para calcular o valor total de cada produto (preço * quantidade).
+let listaProdutos = [
+  {nome: 'Açaí', preco: 8, quantidade: 50},
+  {nome: 'Café', preco: 6, quantidade: 20},
+  {nome: 'Chocolate', preco: 5, quantidade: 10}
+];
 
-8- Converta um array de temperaturas em graus Celsius para Fahrenheit usando a fórmula (C * 9/5) + 32.
+let valorTotal = listaProdutos.map((produto) => {
+  return produto.preco * produto.quantidade;
+});
 
-### Reduce:
+for (let i = 0; i < listaProdutos.length; i++) {
+  console.log(`Produto: ${listaProdutos[i].nome}, Valor Total: R$${valorTotal[i]}`);
+};
+*/
 
-9- Dado um array de números, use o método reduce() para calcular a soma de todos os elementos.
+// 8- Converta um array de temperaturas em graus Celsius para Fahrenheit usando a fórmula (C * 9/5) + 32.
 
-10- Crie um array de strings e use o método reduce() para concatenar todas as strings em uma única string.
+/*
+let temperaturasC = [25, 38, 40, 100, 150, -6];
 
-11- Dado um array de objetos representando despesas com propriedades como valor e categoria, use o método reduce() para calcular o total de despesas de uma categoria específica.
+let temperaturasF = temperaturasC.map((temperatura) => {
+  return (temperatura * 9/5) + 32;
+});
 
-12- Dado um array de números, use o método reduce() para encontrar o maior número no array.
+console.log(temperaturasF);
+*/
 
+// ### Reduce:
+
+// 9- Dado um array de números, use o método reduce() para calcular a soma de todos os elementos.
+
+/*
+const numeros = [10, 25, 36, 48, 64];
+
+const somaNumeros = numeros.reduce((acumulador, numero) => {
+  return acumulador + numero;
+});
+
+console.log(somaNumeros);
+*/
+
+// 10- Crie um array de strings e use o método reduce() para concatenar todas as strings em uma única string.
+
+/*
+const citacaoLivro = ['Tudo ', 'aquilo ', 'que ', 'a ', 'nossa ', 'civilização ', 'rejeita, ', 'pisa ', 'e ', 'mija ', 'em ', 'cima ', 'serve ', 'para ', 'poesia.', '\n- Manoel ', 'de ', 'Barros.'];
+
+console.log('Array com '+ citacaoLivro.length + ' itens.');
+
+const citacaoCompleta = citacaoLivro.reduce((acumulador, palavra) => {
+  return acumulador + palavra;
+});
+
+console.log(citacaoCompleta);
+*/
+
+// 11- Dado um array de objetos representando despesas com propriedades como valor e categoria, use o método reduce() para calcular o total de despesas de uma categoria específica.
+
+/*
+const despesasViagem = [
+  {nome: 'Hotel', valor: 400},
+  {nome: 'Passagem', valor: 500},
+  {nome: 'Alimentação', valor: 300},
+  {nome: 'Compras', valor: 600},
+  {nome: 'Passagem', valor: 200},
+  {nome: 'Alimentação', valor: 140}
+];
+
+const categoriaEscolhida = 'Passagem';
+
+const despesasTotal = despesasViagem.reduce((soma, despesa) => {
+  if(despesa.nome === categoriaEscolhida) {
+    return soma + despesa.valor;
+  };
+  return soma;
+}, 0);
+
+console.log(`O valor total das despesas da categoria '${categoriaEscolhida}' é R$${despesasTotal}`);
+*/
+
+// 12- Dado um array de números, use o método reduce() para encontrar o maior número no array.
+
+/*
+const listaNumeros = [1020, 35, 45, 87, 21, 42, 130, 20];
+
+const maiorNumero = listaNumeros.reduce((acumulador, numero) => {
+  if(acumulador > numero){
+    return acumulador;
+  };
+  return numero;
+}, 0);
+
+console.log(maiorNumero);
+*/
+
+/*
 ### Laços de Repetiçoes
 13- Imprima os números de 1 a 10 utilizando um loop for.
 
