@@ -213,16 +213,49 @@ const maiorNumero = listaNumeros.reduce((acumulador, numero) => {
 console.log(maiorNumero);
 */
 
+// ### Laços de Repetiçoes
+// 13- Imprima os números de 1 a 10 utilizando um loop for.
+
 /*
-### Laços de Repetiçoes
-13- Imprima os números de 1 a 10 utilizando um loop for.
+for(let i = 1; i < 11; i++) {
+  console.log(i);
+};
+*/
 
-14- Imprima os números pares de 1 a 20 utilizando um loop for.
+// 14- Imprima os números pares de 1 a 20 utilizando um loop for.
 
-15- Calcule a soma dos números de 1 a 50 utilizando um loop for.
+/*
+for(let i = 1; i < 21; i++) {
+  if(i % 2 == 0) {
+    console.log(i);
+  }
+};
+*/
 
-16- Imprima a tabuada do 7 utilizando um loop for.
+// 15- Calcule a soma dos números de 1 a 50 utilizando um loop for.
 
+/*
+const numeroAlvo = 50;
+let soma = 0;
+
+for(let i = 1; i <= numeroAlvo; i++) {
+  soma += i;
+}
+
+console.log(`A soma entre 1 e ${numeroAlvo} é ${soma}`);
+*/
+
+// 16- Imprima a tabuada do 7 utilizando um loop for.
+
+/*
+numeroTabuada = 7;
+
+for(let i = 1; i <= 10; i++) {
+  console.log(`${numeroTabuada} * ${i} = ${numeroTabuada * i}`)
+}
+*/
+
+/*
 17- Escreva um programa que solicite ao usuário um número e imprima a sequência de números de 1 até o número inserido, utilizando um loop for.
 
 18- Escreva um programa que solicite ao usuário um número e verifique se ele é primo.
