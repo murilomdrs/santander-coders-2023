@@ -255,11 +255,19 @@ for(let i = 1; i <= 10; i++) {
 }
 */
 
+// 17- Escreva um programa que solicite ao usuário um número e imprima a sequência de números de 1 até o número inserido, utilizando um loop for.
+
 /*
-17- Escreva um programa que solicite ao usuário um número e imprima a sequência de números de 1 até o número inserido, utilizando um loop for.
+const numeroSelecionado = prompt('Insira um número');
 
-18- Escreva um programa que solicite ao usuário um número e verifique se ele é primo.
+for(let i = 1; i <= numeroSelecionado; i++) {
+  console.log(i);
+}
+*/
 
+// 18- Escreva um programa que solicite ao usuário um número e verifique se ele é primo.
+
+/*
 19- Crie um programa que gere a sequência de Fibonacci até o décimo termo. (Dica: o próximo termo é a soma dos dois termos anteriores)
 
 20- Crie um programa que solicite ao usuário um número e calcule o fatorial desse número.
